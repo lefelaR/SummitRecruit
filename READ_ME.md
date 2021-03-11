@@ -28,3 +28,17 @@ here you will create a model for each table with the fields as the names of the 
 
 ## Api for the depatment screen
 
+    * in order to avoid sql injection, we use stored procedures tot get the values from the database.
+
+
+
+    * the following code goes bellow the logic for getting the row in the database
+    
+```   using(var con = new SqlConnection(ConfigurationManager.ConnectionStrings["EmployeeDb"].ConnectionString))
+                using (var cmd = new SqlCommand(qry,con))
+                using (var da = new SqlDataAdapter(cmd))
+            {
+                cmd.CommandType = CommandType.Text;
+                da.Fill(table);
+            }
+```
