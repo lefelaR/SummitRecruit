@@ -14,6 +14,17 @@ create an asp.net webapi  file
 
 ```Install-Package Microsoft.AspNet.WebApi.Cors```
 
-*Next, once that is all installed , add a using on the top of the `WebApiConfig` file to make sure rtgar cors will be used 
+*Next, once that is all installed , add a using on the top of the `WebApiConfig` file to make sure rtgar cors will be used* 
 
 ```config.EnableCors(new EnableCorsAttribute("*", "*", "*"));```
+
+
+## Create The Models
+
+### department & employee
+
+here you will create a model for each table with the fields as the names of the different feilds in the  database.
+
+
+## Api for the depatment screen
+
