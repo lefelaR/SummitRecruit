@@ -8,4 +8,12 @@
 create an asp.net webapi  file 
 
 
-#Enable Cors
+#Enable Cors for the UI/ front end
+
+*the way to enable cors is to place this line of code into the package manager console
+
+```Install-Package Microsoft.AspNet.WebApi.Cors```
+
+*Next, once that is all installed , add a using on the top of the `WebApiConfig` file to make sure rtgar cors will be used 
+
+```config.EnableCors(new EnableCorsAttribute("*", "*", "*"));```
