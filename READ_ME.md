@@ -10,7 +10,7 @@ create an asp.net webapi  file
 
 #Enable Cors for the UI/ front end
 
-*the way to enable cors is to place this line of code into the package manager console
+*the way to enable cors is to place this line of code into the package manager console*
 
 ```Install-Package Microsoft.AspNet.WebApi.Cors```
 
