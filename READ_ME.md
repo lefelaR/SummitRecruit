@@ -26,7 +26,7 @@ create an asp.net webapi  file
 here you will create a model for each table with the fields as the names of the different feilds in the  database.
 
 
-## Api for the depatment screen
+### Api for the depatment screen
 
     * in order to avoid sql injection, we use stored procedures tot get the values from the database.
 
